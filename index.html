@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프리미엄 재무 DB 솔루션</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <style>
+        body {
+            font-family: 'Pretendard', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            word-break: keep-all;
+        }
+        /* 메인 배너 영역 */
+        .hero {
+            background: linear-gradient(135deg, #1A2980 0%, #26D0CE 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+        /* 콘텐츠 영역 */
+        .container {
+            max-width: 1100px;
+            margin: -40px auto 50px;
+            padding: 0 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+        /* 개별 카드 디자인 */
+        .card {
+            background: white;
+            padding: 35px 25px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            border-top: 5px solid #1A2980;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+        }
+        .icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: #1A2980;
+            font-weight: 700;
+        }
+        .card p {
+            font-size: 1.05rem;
+            line-height: 1.6;
+            color: #555;
+        }
+        /* 강조 형광펜 효과 */
+        .highlight {
+            background: linear-gradient(transparent 60%, #ffd900 60%);
+            font-weight: bold;
+            color: #111;
+        }
+        /* 하단 액션 버튼 영역 */
+        .cta-section {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #fff;
+            border-top: 1px solid #eee;
+        }
+        .cta-section h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+        .cta-btn {
+            display: inline-block;
+            background-color: #ff4757;
+            color: white;
+            padding: 18px 50px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(255, 71, 87, 0.4);
+            transition: background-color 0.3s;
+        }
+        .cta-btn:hover {
+            background-color: #ff6b81;
+        }
+        
+        /* 📱 모바일 최적화 (이 부분이 대폭 수정되었습니다) */
+        @media (max-width: 768px) {
+            .hero { padding: 50px 20px; } /* 배너 높이 축소 */
+            .hero h1 { font-size: 1.8rem; } /* 모바일에 맞는 제목 크기 */
+            .hero p { font-size: 1rem; }
+            .container { margin-top: -20px; } /* 카드 여백 조정 */
+            .card { padding: 25px 20px; }
+            
+            
+            .cta-section { padding: 40px 20px; }
+            .cta-section h2 { 
+                font-size: 1.35rem; /* 하단 제목 크기 조정 */
+                line-height: 1.5;
+            }
+            .cta-btn { 
+                display: block; /* 버튼을 가로로 길게 확장 */
+                width: 90%; 
+                max-width: 350px;
+                margin: 0 auto; 
+                padding: 16px 0; 
+                font-size: 1.15rem; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <h1>영업의 격을 높이는<br>프리미엄 재무 DB</h1>
+        <p>저렴한 DB 여러 개보다 확실한 DB 한 개가<br>당신의 실적을 바꿉니다.<br>영업 고수들이 단골로 남는 이유를 확인해 보세요.</p>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            <div class="card">
+                <div class="icon">⏰</div>
+                <h3>A/S의 패러다임 전환</h3>
+                <p>불량 DB 증빙하느라 <br>시간 낭비하지 마세요.<br>저희는 묻고 따지지도 않고 <br><span class="highlight">신청 수량의 10%를 선지급</span>합니다.<br>고객님은 오직 '영업'에만 집중하세요.</p>
+            </div>
+            
+            <div class="card">
+                <div class="icon">💎</div>
+                <h3>압도적인 퀄리티</h3>
+                <p>타사 대비 가격이 높지만 버려지는 시간 없이 실질적인 상담으로 이어지는 <br><span class="highlight">'진짜 통하는 데이터'</span>만을 <br>엄선하여 제공합니다.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📞</div>
+                <h3>과장 없는 팩트, 컨택율</h3>
+                <p>100%라는 거짓말은 하지 않습니다.<br>하지만 10명 중 4~5명은<br>무조건 대화가 시작되는 <br><span class="highlight">평균 40~50%의 <br>현실적이고 강력한 컨택율</span>을 <br>자랑합니다.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🤝</div>
+                <h3>높은 재구매율의 비밀</h3>
+                <p>계약 성공률은 대표님의 역량입니다.<br>하지만 <span class="highlight">압도적인 단골 고객 비율</span>이<br>저희 품질을 증명합니다.<br>돈 버는 분들은 반드시 다시 찾아오십니다.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="cta-section">
+        <h2>압도적인 프리미엄 DB의 가치를 확인하고 미팅을 제안받아보세요!</h2>
+        <a href="https://101outpost.notion.site/" target="_blank" class="cta-btn">DB 단가표 및 회사소개 페이지</a>
+    </section>
+
+</body>
+</html>
